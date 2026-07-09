@@ -155,6 +155,20 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <div className="pt-4 mt-4 border-t border-white/5">
+            <Link
+              href="/admin/login"
+              onClick={() => setMobileOpen(false)}
+              className={cn(
+                "flex items-center px-4 py-4 rounded-xl text-sm font-semibold transition-all uppercase tracking-[0.1em]",
+                pathname === "/admin/login"
+                  ? "bg-[color:var(--color-primary)]/10 text-[color:var(--color-secondary)]"
+                  : "text-[color:var(--color-cream)]/50 hover:bg-[color:var(--color-secondary)]/10 hover:text-[color:var(--color-secondary)]"
+              )}
+            >
+              Acceso privado
+            </Link>
+          </div>
         </nav>
       </div>
     </>
