@@ -1,6 +1,14 @@
 /**
  * Rate Limiter en memoria simple basado en IP
  * Almacena intentos por IP y valida contra límites configurables
+ *
+ * ⚠️ ADVERTENCIA SERVERLESS:
+ * Este rate limiter usa un Map en memoria. En entornos serverless (como Vercel),
+ * cada invocación de función puede ejecutarse en un proceso distinto, por lo que
+ * el estado del Map NO persiste entre requests en producción.
+ * Para un rate limiting real en producción, usar una solución externa como:
+ *   - Upstash Redis: https://upstash.com
+ *   - Vercel KV (basado en Upstash): https://vercel.com/docs/storage/vercel-kv
  */
 
 interface RateLimitRecord {
