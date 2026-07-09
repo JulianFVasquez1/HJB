@@ -36,7 +36,7 @@ export default function AdminLoginPage() {
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center p-4"
       style={{
-        backgroundImage: "url('/images/ChatGPT Image 3 jul 2026, 14_19_01.jpg')",
+        backgroundImage: "url('/images/WhatsApp_Image_2026-07-09_at_6.34.23_202607091853.jpeg')",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

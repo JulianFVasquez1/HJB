@@ -53,8 +53,8 @@ export default function ProductoPage() {
             <div className="w-full lg:w-1/2">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-neutral-800 group">
                 <Image
-                  src="/product-beef.png"
-                  alt="Lomo fino de res premium - corte de alta calidad"
+                  src="/images/WhatsApp_Image_2026-07-09_at_6.34.23_202607091847.jpeg"
+                  alt="Lomo fino de res premium empacado al vacío - HJB"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
