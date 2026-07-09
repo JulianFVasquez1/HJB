@@ -10,7 +10,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/fondo.jpeg" 
+            src="/images/Fondo .jpeg" 
             alt="HJB Lomo Fino de Res empacado al vacío" 
             fill
             className="object-cover"
