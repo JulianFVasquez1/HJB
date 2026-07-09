@@ -155,7 +155,7 @@ export default function AdminDashboardPage() {
                     <td className="p-4 text-gray-500 text-sm">{new Date(quote.created_at).toLocaleDateString("es-CO")}</td>
                     <td className="p-4">{getStatusBadge(quote.status)}</td>
                     <td className="p-4 text-right" onClick={(e) => e.stopPropagation()}>
-                      <select value={quote.status} onChange={(e) => void updateStatus(quote.id, e.target.value)} className="border border-gray-300 rounded-lg px-2 py-1 text-sm bg-white cursor-pointer">
+                      <select value={quote.status} onChange={(e) => void updateStatus(quote.id, e.target.value)} className="border border-gray-300 rounded-lg px-2 py-1 text-sm bg-white text-black cursor-pointer">
                         <option value="nueva">Nueva</option>
                         <option value="contactado">Contactado</option>
                         <option value="cerrada">Cerrada</option>
@@ -257,7 +257,7 @@ export default function AdminDashboardPage() {
                       void updateStatus(selectedQuote.id, newStatus);
                       setSelectedQuote({ ...selectedQuote, status: newStatus });
                     }}
-                    className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white font-medium cursor-pointer"
+                    className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white text-black font-medium cursor-pointer"
                   >
                     <option value="nueva">Nueva</option>
                     <option value="contactado">Contactado</option>
