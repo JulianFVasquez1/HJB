@@ -1,6 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "npm install --prefix hjb-web",
-  "buildCommand": "npm run build --prefix hjb-web",
-  "framework": "nextjs"
-}
